@@ -1,0 +1,8 @@
+CSVtoJSON/target/classes/config.properties
+CSVtoJSON/target/classes/com/histo/controller/CSVtoJSONConverter.class
+CSVtoJSON/target/classes/com/histo/model/CSVinput.class
+CSVtoJSON/target/classes/com/histo/model/JSONOutputModel.class
+CSVtoJSON/target/classes/com/histo/model/JsonSNPsModel.class
+CSVtoJSON/target/classes/META-INF/MANIFEST.MF
+CSVtoJSON/target/classes/META-INF/maven/com.histo.CSVtoJSON/CSVtoJSON/pom.properties
+CSVtoJSON/target/classes/META-INF/maven/com.histo.CSVtoJSON/CSVtoJSON/pom.xml
