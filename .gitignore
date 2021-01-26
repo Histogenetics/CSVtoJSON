@@ -6,3 +6,8 @@ CSVtoJSON/target/classes/com/histo/model/JsonSNPsModel.class
 CSVtoJSON/target/classes/META-INF/MANIFEST.MF
 CSVtoJSON/target/classes/META-INF/maven/com.histo.CSVtoJSON/CSVtoJSON/pom.properties
 CSVtoJSON/target/classes/META-INF/maven/com.histo.CSVtoJSON/CSVtoJSON/pom.xml
+target/CSVtoJSON-0.0.1.jar
+target/maven-archiver/pom.properties
+target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst

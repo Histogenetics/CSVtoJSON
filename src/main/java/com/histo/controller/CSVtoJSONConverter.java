@@ -17,14 +17,17 @@ public class CSVtoJSONConverter {
 
 	public static void main(String arg[]) throws Exception {
 		
+		if(arg.length == 0) {
+			System.out.println("Mismatch number of arguments");
+			return;
+		}
+		String csvFile = arg[0];
 		ObjectMapper mapper = new ObjectMapper();
 		CsvMapper csvMapper = new CsvMapper();
-		Properties prop = getCSVFolderProperities();
-		System.out.println("Folder from configuration :"+prop.getProperty("csvPath"));
-		File[] csvfiles = new File(prop.getProperty("csvPath")).listFiles(obj -> obj.isFile() && obj.getName().endsWith(".csv"));
+		File csvFileInputFile = new File(csvFile);
 
-		if (csvfiles.length > 0) {
-			for (File csvFileInputFile : csvfiles) {
+//		if (csvfiles.length > 0) {
+//			for (File csvFileInputFile : csvfiles) {
 
 //		File csvFileInputFile = new File("F:\\CSVtoJson\\AN25587853.csv");
 				File jsonOutPutFile = new File(csvFileInputFile.getAbsolutePath().replace("csv", "json"));
@@ -59,18 +62,18 @@ public class CSVtoJSONConverter {
 					jsonOuputModel.setSNPs(listOfData);
 
 					mapper.writerWithDefaultPrettyPrinter().writeValue(jsonOutPutFile, jsonOuputModel);
-					if (csvFileInputFile.delete())
-						System.out.println(
-								"Deleted :" + csvFileInputFile.getName() + " and created " + jsonOutPutFile.getName());
+//					if (csvFileInputFile.delete())
+//						System.out.println(
+//								"Deleted :" + csvFileInputFile.getName() + " and created " + jsonOutPutFile.getName());
 
 				} catch (Exception e) {
 					throw new Exception("Exception occured and stoped the program"+e.getMessage());
 					
 				}
 
-			}
-		} else
-			System.out.println("CSV files not found");
+//			}
+//		} else
+//			System.out.println("CSV files not found");
 		/*
 		 * File input = new File("F:\\CSVtoJson\\AN25587853.csv"); File output = new
 		 * File("F:\\CSVtoJson\\AN25587853.json");
