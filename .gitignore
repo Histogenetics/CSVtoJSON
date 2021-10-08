@@ -11,3 +11,13 @@ target/maven-archiver/pom.properties
 target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
 target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
 target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+target/CSVtoJSON-0.0.1.jar.zip
+target/classes/META-INF/maven/com.histo.CSVtoJSON/CSVtoJSON/pom.xml
+target/classes/META-INF/maven/com.histo.CSVtoJSON/CSVtoJSON/pom.properties
+target/classes/META-INF/MANIFEST.MF
+target/classes/com/histo/model/JsonSNPsModel.class
+target/classes/com/histo/model/JSONOutputModel.class
+target/classes/com/histo/model/CSVinput.class
+target/classes/com/histo/controller/CSVtoJSONConverter.class
+target/archive-tmp/CSVtoJSON-0.0.1.jar
+.settings/org.eclipse.jdt.core.prefs

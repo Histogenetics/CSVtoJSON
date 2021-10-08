@@ -7,6 +7,42 @@
 	<artifactId>CSVtoJSON</artifactId>
 	<version>0.0.1</version>
 	<name>CSVtoJSON</name>
+	<build>
+ 		<plugins>
+     		<plugin> 
+
+                <!-- Building an executable jar -->
+
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                  <archive>
+                    <manifest>
+
+                    <!-- give full qualified name of your main class-->
+                      <mainClass>com.histo.controller.CSVtoJSONConverter</mainClass>
+
+                    </manifest>
+                  </archive>
+                  <descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				<appendAssemblyId>false</appendAssemblyId>
+                </configuration>
+                <executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+    			</plugin>
+ 		</plugins>
+	</build>
+	 
 	<description>ConverCSVtoJSON</description>
 	<properties>
 		<java.version>1.8</java.version>
